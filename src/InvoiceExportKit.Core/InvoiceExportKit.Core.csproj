@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>InvoiceExportKit.Core</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>InvoiceExportKit Contributors</Authors>
+    <Description>Validation and totals-calculation logic for InvoiceExportKit</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InvoiceExportKit.Abstractions\InvoiceExportKit.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

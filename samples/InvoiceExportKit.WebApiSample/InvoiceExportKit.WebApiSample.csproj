@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>InvoiceExportKit.WebApiSample</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\InvoiceExportKit.Core\InvoiceExportKit.Core.csproj" />
+    <ProjectReference Include="..\..\src\InvoiceExportKit.Excel.OpenXml\InvoiceExportKit.Excel.OpenXml.csproj" />
+    <ProjectReference Include="..\..\src\InvoiceExportKit.Templates\InvoiceExportKit.Templates.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>InvoiceExportKit.Abstractions</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>InvoiceExportKit Contributors</Authors>
+    <Description>Contracts, models, and options for InvoiceExportKit</Description>
+    <PackageTags>invoice;excel;export;openxml</PackageTags>
+    <RepositoryUrl>https://github.com/your-org/InvoiceExportKit</RepositoryUrl>
+  </PropertyGroup>
+</Project>

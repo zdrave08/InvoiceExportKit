@@ -1,0 +1,80 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.Abstractions", "src\InvoiceExportKit.Abstractions\InvoiceExportKit.Abstractions.csproj", "{A1B2C3D4-0001-0001-0001-A1B2C3D40001}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.Core", "src\InvoiceExportKit.Core\InvoiceExportKit.Core.csproj", "{A1B2C3D4-0002-0002-0002-A1B2C3D40002}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.Excel.OpenXml", "src\InvoiceExportKit.Excel.OpenXml\InvoiceExportKit.Excel.OpenXml.csproj", "{A1B2C3D4-0003-0003-0003-A1B2C3D40003}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.Templates", "src\InvoiceExportKit.Templates\InvoiceExportKit.Templates.csproj", "{A1B2C3D4-0004-0004-0004-A1B2C3D40004}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.ConsoleSample", "samples\InvoiceExportKit.ConsoleSample\InvoiceExportKit.ConsoleSample.csproj", "{A1B2C3D4-0005-0005-0005-A1B2C3D40005}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.WebApiSample", "samples\InvoiceExportKit.WebApiSample\InvoiceExportKit.WebApiSample.csproj", "{A1B2C3D4-0006-0006-0006-A1B2C3D40006}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.Core.Tests", "tests\InvoiceExportKit.Core.Tests\InvoiceExportKit.Core.Tests.csproj", "{A1B2C3D4-0007-0007-0007-A1B2C3D40007}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceExportKit.Excel.OpenXml.Tests", "tests\InvoiceExportKit.Excel.OpenXml.Tests\InvoiceExportKit.Excel.OpenXml.Tests.csproj", "{A1B2C3D4-0008-0008-0008-A1B2C3D40008}"
+EndProject
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F0000001-0000-0000-0000-F00000000001}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F0000002-0000-0000-0000-F00000000002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F0000003-0000-0000-0000-F00000000003}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B2C3D4-0001-0001-0001-A1B2C3D40001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0001-0001-0001-A1B2C3D40001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0001-0001-0001-A1B2C3D40001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0001-0001-0001-A1B2C3D40001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0002-0002-0002-A1B2C3D40002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0002-0002-0002-A1B2C3D40002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0002-0002-0002-A1B2C3D40002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0002-0002-0002-A1B2C3D40002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0003-0003-0003-A1B2C3D40003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0003-0003-0003-A1B2C3D40003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0003-0003-0003-A1B2C3D40003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0003-0003-0003-A1B2C3D40003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0004-0004-0004-A1B2C3D40004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0004-0004-0004-A1B2C3D40004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0004-0004-0004-A1B2C3D40004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0004-0004-0004-A1B2C3D40004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0005-0005-0005-A1B2C3D40005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0005-0005-0005-A1B2C3D40005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0005-0005-0005-A1B2C3D40005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0005-0005-0005-A1B2C3D40005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0006-0006-0006-A1B2C3D40006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0006-0006-0006-A1B2C3D40006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0006-0006-0006-A1B2C3D40006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0006-0006-0006-A1B2C3D40006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0007-0007-0007-A1B2C3D40007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0007-0007-0007-A1B2C3D40007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0007-0007-0007-A1B2C3D40007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0007-0007-0007-A1B2C3D40007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0008-0008-0008-A1B2C3D40008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0008-0008-0008-A1B2C3D40008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0008-0008-0008-A1B2C3D40008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0008-0008-0008-A1B2C3D40008}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1B2C3D4-0001-0001-0001-A1B2C3D40001} = {F0000001-0000-0000-0000-F00000000001}
+		{A1B2C3D4-0002-0002-0002-A1B2C3D40002} = {F0000001-0000-0000-0000-F00000000001}
+		{A1B2C3D4-0003-0003-0003-A1B2C3D40003} = {F0000001-0000-0000-0000-F00000000001}
+		{A1B2C3D4-0004-0004-0004-A1B2C3D40004} = {F0000001-0000-0000-0000-F00000000001}
+		{A1B2C3D4-0005-0005-0005-A1B2C3D40005} = {F0000002-0000-0000-0000-F00000000002}
+		{A1B2C3D4-0006-0006-0006-A1B2C3D40006} = {F0000002-0000-0000-0000-F00000000002}
+		{A1B2C3D4-0007-0007-0007-A1B2C3D40007} = {F0000003-0000-0000-0000-F00000000003}
+		{A1B2C3D4-0008-0008-0008-A1B2C3D40008} = {F0000003-0000-0000-0000-F00000000003}
+	EndGlobalSection
+EndGlobal
