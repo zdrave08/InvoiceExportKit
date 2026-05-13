@@ -1,26 +1,40 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
     <PackageId>InvoiceExportKit.Excel.OpenXml</PackageId>
     <Version>1.0.0</Version>
     <Authors>Zdravko Lukic</Authors>
-    <Description>Excel invoice export library using Open XML. Supports templates, formatting, merged cells, and custom column widths.</Description>
-    <PackageTags>invoice excel openxml export</PackageTags>
-    <RepositoryUrl>https://github.com/zdrave08/invoice-export-kit</RepositoryUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Company>Bitwise Software</Company>
+
+    <Description>Lightweight .NET library for exporting professional invoice Excel files using Open XML.</Description>
+    <PackageTags>invoice excel export openxml xlsx document</PackageTags>
+
+    <PackageProjectUrl>https://github.com/zdrave08/InvoiceExportKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zdrave08/InvoiceExportKit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.1.0" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\InvoiceExportKit.Abstractions\InvoiceExportKit.Abstractions.csproj" />
     <ProjectReference Include="..\InvoiceExportKit.Templates\InvoiceExportKit.Templates.csproj" />
   </ItemGroup>
+
 </Project>

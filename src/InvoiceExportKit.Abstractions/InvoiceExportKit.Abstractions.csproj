@@ -1,19 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
     <PackageId>InvoiceExportKit.Abstractions</PackageId>
     <Version>1.0.0</Version>
     <Authors>Zdravko Lukic</Authors>
-    <Description>Contracts, models, and options for InvoiceExportKit — the core abstractions shared across all packages.</Description>
-    <PackageTags>invoice excel openxml export abstractions</PackageTags>
-    <RepositoryUrl>https://github.com/zdrave08/invoice-export-kit</RepositoryUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Company>Bitwise Software</Company>
+
+    <Description>Core contracts, models, and options for InvoiceExportKit. Shared abstractions with no rendering dependencies.</Description>
+    <PackageTags>invoice excel export openxml abstractions models contracts</PackageTags>
+
+    <PackageProjectUrl>https://github.com/zdrave08/InvoiceExportKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zdrave08/InvoiceExportKit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
+
 </Project>

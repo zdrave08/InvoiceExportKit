@@ -1,22 +1,35 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
     <PackageId>InvoiceExportKit.Core</PackageId>
     <Version>1.0.0</Version>
     <Authors>Zdravko Lukic</Authors>
-    <Description>Validation and totals-calculation logic for InvoiceExportKit. No rendering dependencies.</Description>
-    <PackageTags>invoice excel openxml export validation calculation</PackageTags>
-    <RepositoryUrl>https://github.com/zdrave08/invoice-export-kit</RepositoryUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Company>Bitwise Software</Company>
+
+    <Description>Validation and totals-calculation logic for InvoiceExportKit. No rendering or Open XML dependencies.</Description>
+    <PackageTags>invoice excel export openxml validation calculation</PackageTags>
+
+    <PackageProjectUrl>https://github.com/zdrave08/InvoiceExportKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zdrave08/InvoiceExportKit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\InvoiceExportKit.Abstractions\InvoiceExportKit.Abstractions.csproj" />
   </ItemGroup>
+
 </Project>
