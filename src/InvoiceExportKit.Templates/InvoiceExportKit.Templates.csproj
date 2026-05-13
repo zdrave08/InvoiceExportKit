@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
 
     <PackageId>InvoiceExportKit.Templates</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Zdravko Lukic</Authors>
 
     <Description>Built-in invoice templates (Simple, Corporate) for InvoiceExportKit. Pluggable via IInvoiceTemplate.</Description>

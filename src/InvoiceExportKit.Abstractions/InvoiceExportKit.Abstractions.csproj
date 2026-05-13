@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
 
     <PackageId>InvoiceExportKit.Abstractions</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Zdravko Lukic</Authors>
 
     <Description>Core contracts, models, and options for InvoiceExportKit. Shared abstractions with no rendering dependencies.</Description>

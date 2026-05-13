@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
 
     <PackageId>InvoiceExportKit.Excel.OpenXml</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Zdravko Lukic</Authors>
 
     <Description>Lightweight .NET library for exporting professional invoice Excel files using Open XML.</Description>
