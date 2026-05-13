@@ -6,9 +6,16 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageId>InvoiceExportKit.Excel.OpenXml</PackageId>
     <Version>1.0.0</Version>
-    <Authors>InvoiceExportKit Contributors</Authors>
-    <Description>Open XML SDK-based Excel exporter for InvoiceExportKit</Description>
+    <Authors>Zdravko Lukic</Authors>
+    <Description>Excel invoice export library using Open XML. Supports templates, formatting, merged cells, and custom column widths.</Description>
+    <PackageTags>invoice excel openxml export</PackageTags>
+    <RepositoryUrl>https://github.com/zdrave08/invoice-export-kit</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.1.0" />
   </ItemGroup>

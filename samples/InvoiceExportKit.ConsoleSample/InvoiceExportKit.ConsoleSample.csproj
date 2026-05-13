@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>InvoiceExportKit.ConsoleSample</RootNamespace>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\InvoiceExportKit.Core\InvoiceExportKit.Core.csproj" />
