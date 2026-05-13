@@ -6,7 +6,6 @@
     <PackageId>InvoiceExportKit.Abstractions</PackageId>
     <Version>1.0.1</Version>
     <Authors>Zdravko Lukic</Authors>
-    <Company>Bitwise Software</Company>
 
     <Description>Core contracts, models, and options for InvoiceExportKit. Shared abstractions with no rendering dependencies.</Description>
     <PackageTags>invoice excel export openxml abstractions models contracts</PackageTags>

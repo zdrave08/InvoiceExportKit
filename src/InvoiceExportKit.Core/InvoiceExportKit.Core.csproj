@@ -6,7 +6,6 @@
     <PackageId>InvoiceExportKit.Core</PackageId>
     <Version>1.0.1</Version>
     <Authors>Zdravko Lukic</Authors>
-    <Company>Bitwise Software</Company>
 
     <Description>Validation and totals-calculation logic for InvoiceExportKit. No rendering or Open XML dependencies.</Description>
     <PackageTags>invoice excel export openxml validation calculation</PackageTags>

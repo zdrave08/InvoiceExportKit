@@ -6,7 +6,6 @@
     <PackageId>InvoiceExportKit.Excel.OpenXml</PackageId>
     <Version>1.0.1</Version>
     <Authors>Zdravko Lukic</Authors>
-    <Company>Bitwise Software</Company>
 
     <Description>Lightweight .NET library for exporting professional invoice Excel files using Open XML.</Description>
     <PackageTags>invoice excel export openxml xlsx document</PackageTags>

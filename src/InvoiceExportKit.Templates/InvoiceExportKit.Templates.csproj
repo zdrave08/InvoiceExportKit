@@ -6,7 +6,6 @@
     <PackageId>InvoiceExportKit.Templates</PackageId>
     <Version>1.0.1</Version>
     <Authors>Zdravko Lukic</Authors>
-    <Company>Bitwise Software</Company>
 
     <Description>Built-in invoice templates (Simple, Corporate) for InvoiceExportKit. Pluggable via IInvoiceTemplate.</Description>
     <PackageTags>invoice excel export openxml templates simple corporate</PackageTags>
