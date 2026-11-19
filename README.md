@@ -1,6 +1,6 @@
 # InvoiceExportKit
 
-A lightweight, open-source .NET 8 library for exporting professional invoice documents to Excel (`.xlsx`) using the [Open XML SDK](https://github.com/dotnet/Open-XML-SDK). Designed as a reusable, NuGet-friendly toolkit with clean separation of concerns.
+A lightweight, open-source .NET library (targets .NET 10 and .NET 8) for exporting professional invoice documents to Excel (`.xlsx`) using the [Open XML SDK](https://github.com/dotnet/Open-XML-SDK). Designed as a reusable, NuGet-friendly toolkit with clean separation of concerns.
 
 ---
 
@@ -171,7 +171,7 @@ dotnet test
 ```bash
 cd samples/InvoiceExportKit.ConsoleSample
 dotnet run
-# Output files written to: bin/Debug/net8.0/output/
+# Output files written to: bin/Debug/net10.0/output/
 ```
 
 ---
