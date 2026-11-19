@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+
+      - name: Restore
+        run: dotnet restore InvoiceExportKit.sln
+
+      - name: Fail on vulnerable packages (incl. transitive)
+        run: |
+          dotnet list InvoiceExportKit.sln package --vulnerable --include-transitive | tee vuln.txt
+          if grep -q "has the following vulnerable packages" vuln.txt; then
+            echo "::error::Vulnerable NuGet packages found"; exit 1
+          fi
+
+      - name: Build
+        run: dotnet build InvoiceExportKit.sln --configuration Release --no-restore
+
+      - name: Test (net8.0 and net10.0)
+        run: dotnet test InvoiceExportKit.sln --configuration Release --no-build --verbosity normal
+
+      - name: Check packages contain both target frameworks
+        run: |
+          set -e
+          for p in src/*/bin/Release/*.nupkg; do
+            echo "$p"
+            for tfm in net8.0 net10.0; do
+              # every package (incl. the meta-package) must declare a dependency group per TFM
+              unzip -p "$p" '*.nuspec' | grep -q "targetFramework=\"$tfm\"" || { echo "missing $tfm dependency group in $p"; exit 1; }
+              # packages that ship a DLL must contain lib/<tfm>/
+              if unzip -l "$p" | grep -q "lib/"; then
+                unzip -l "$p" | grep -q "lib/$tfm/" || { echo "missing lib/$tfm in $p"; exit 1; }
+              fi
+            done
+          done

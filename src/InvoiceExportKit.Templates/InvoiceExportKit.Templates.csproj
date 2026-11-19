@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
 
     <PackageId>InvoiceExportKit.Templates</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
     <Authors>Zdravko Lukic</Authors>
 
     <Description>Built-in invoice templates (Simple, Corporate) for InvoiceExportKit. Pluggable via IInvoiceTemplate.</Description>
