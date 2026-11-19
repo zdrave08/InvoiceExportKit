@@ -20,6 +20,13 @@ jobs:
       - name: Restore
         run: dotnet restore InvoiceExportKit.sln
 
+      - name: Fail on vulnerable packages (incl. transitive)
+        run: |
+          dotnet list InvoiceExportKit.sln package --vulnerable --include-transitive | tee vuln.txt
+          if grep -q "has the following vulnerable packages" vuln.txt; then
+            echo "::error::Vulnerable NuGet packages found"; exit 1
+          fi
+
       - name: Build
         run: dotnet build InvoiceExportKit.sln --configuration Release --no-restore
 
